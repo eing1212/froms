@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MJU froms</title>
-   
-   
+
+
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -17,70 +18,204 @@
         integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
         </script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
+
+
 </head>
 
 <body>
-  
+
     <div class="frame">
-    <div class="container">
-        <div class="row">
-            
-           <div>
+        <div class="container">
+            <div class="row">
 
-              <h1 class="help_text">คำร้องขอพักการศึกษา<span class="badge bg-secondary"></span></h1>
-          
-            </div>
+                <div>
+                    <div class="head">มจท.10</div>
+                    <h1 class="help_text">คำร้องขอพักการศึกษา<span class="badge bg-secondary"></span></h1>
 
-        </div>
-
-    </div>
-
-    
-    <div class="container">
-    <div class="logo">
-        <img id="logo_mj" src="https://upload.wikimedia.org/wikipedia/th/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png">
-    </div>
-    </div>
-    
-    
-    <div class="container">
-        <div class="row">
-            
-           <div>
-
-              <h5 class="helpp_text">(สำหรับนักศึกษาที่ได้ศึกษามาเเล้วไม่น้อยกว่าหนึ่งภาคการศึกษา)<span class="badge bg-secondary"></span></h5>
-          
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="container">
-        
-        <div class="row">
-
-            <div class="row g-4">
-                <div class="col">ชื่อ
-                 
-                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
                 </div>
-                
-                <div class="col">นามสกุล
-           
-                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                </div>
+
             </div>
 
+        </div>
+
+
+        <!-- <div>
+            <input type="date" data-date="" data-date-format="DD MMMM YYYY" value="2020-12-23">
+        </div> -->
+
+
+        <div class="container">
+            <div class="logo">
+                <img id="logo_mj"
+                    src="https://upload.wikimedia.org/wikipedia/th/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png">
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+
+                <div>
+
+                    <h5 class="helpp_text">(สำหรับนักศึกษาที่ได้ศึกษามาเเล้วไม่น้อยกว่าหนึ่งภาคการศึกษา)<span
+                            class="badge bg-secondary"></span></h5>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!--         
+        <div class="container">
+
+            <div class="row">
+
+                <div class="row g-4">
+                    <div class="col">ชื่อ
+
+                        <input1 type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    </div>
+
+                    <div class="col">นามสกุล
+
+                        <input1 type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div> -->
+
+
+        <!-- วันที่ -->
+
+        <h5>เขียนที่มหาลัยเเม่โจ้</h5>
+
+        <form action="">
+            วันที่:
+            <input type="date" name="bday">
+            <input type="submit">
+            <br>
+        </form>
+
+
+        <!-- ชื่อขนามสกุล -->
+        <form>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname required">
+        </form>
+
+        <!-- เพศ -->
+        <h5>เพศ</h5>
+        <form>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </form>
+
+        <!-- รหัสนักศึกษา -->
+        <form>
+            <label for="fname">รหัสนักศึกษา:</label>
+            <input type="text" name="text_plain"
+                onKeyUp="if(isNaN(this.value)){ alert('กรุณากรอกตัวเลข'); this.value='';}" maxlength="10" />
+        </form>
 
         
+        <!-- เบอร์โทร -->
+        <form>
+            <label for="fname">เบอร์โทร:</label>
+            <input type="text" name="text_plain"
+                onKeyUp="if(isNaN(this.value)){ alert('กรุณากรอกตัวเลข'); this.value='';}" maxlength="10" />
+        </form>
+
+
+        <!-- หลักสูตร -->
+        <h5>หลักสูตร</h5>
+        <form>
+            <input type="radio" id="male" name="gender">
+            <label for="4-5 ปี">4-5 ปี</label>
+            <input type="radio" id="female" name="gender">
+            <label for="4 ปีเทียบเข้าเรียน(2ปี)">4 ปีเทียบเข้าเรียน(2ปี)</label>
+        </form>
+
+
+        <form>
+            <input type="radio" id="male" name="gender">
+            <label for="ภาคสมทบ">ภาคปกติ</label>
+            <input type="radio" id="female" name="gender">
+            <label for="ภาคสมทบ">ภาคสมทบ</label>
+        </form>
+        <!-- คณะ -->
+        <div class="form-group">
+            <div class="col-sm-2 control-label">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">คณะ</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01" required>
+                        <option selected>-เลือกข้อมูล-</option>
+                        <option value="1">วิทยาศาสตร์</option>
+                        <option value="2">ศิลป์ศาสตร์</option>
+                    </select>
+                </div>
+            </div>
         </div>
+        <!-- สาขา      -->
+        <div class="form-group">
+            <div class="col-sm-2 control-label">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">สาขา</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01" required>
+                        <option selected>-เลือกข้อมูล-</option>
+                        <option value="1">วิทยาการคอมพิวเตอร์</option>
+                        <option value="2">IT</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- สาขาที่จะย้าย -->
+        <div class="form-group">
+            <div class="col-sm-2 control-label">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">สาขาที่จะย้าย</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01" required>
+                        <option selected>-เลือกข้อมูล-</option>
+                        <option value="1">วิทยาการคอมพิวเตอร์</option>
+                        <option value="2">IT</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- เนื่องจาก    -->
+        <h5>เนื่องจาก</h5>
+        <form action="">
+            <textarea id="เนื่องจาก" name="เนื่องจาก" rows="4" cols="50" maxlength="100"> </textarea>
+        </form>
+        <!-- ความเห็น -->
+
+        <h5>ความเห็น</h5>
+
+        <form action="/action_page.php">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="">
+            <label for="vehicle1">ทราบ</label>
+        </form>
+        <input type="submit" value="Submit">
+
+
     </div>
 
-    
-
-    </div>
-   
 
 </body>
+
 </html>

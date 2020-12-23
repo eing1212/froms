@@ -29,14 +29,20 @@
     text-align: center;
     margin-top: 0.7rem;
 }
-
+/* 
 ื.col {
     text-align: center;
-}
+} */
 
+.head{
+    text-align: right;
+    
+
+}
+ 
 input[type=text] {
     width: 100%;
     padding: 12px 20px;
     margin-left: 0.7rem;
     box-sizing: border-box;
-}
+} 
