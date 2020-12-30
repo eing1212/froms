@@ -2,11 +2,11 @@
 .frame {
     /* width: 1400px; */
     /* padding: 50px; */
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(161, 111, 240);
     margin: 4rem; 
     margin-top: 4rem;
     flex: auto;
-    background-color:hsl(216, 42%, 91%);
+    background-color:hsl(238, 100%, 86%);
 
 } 
 
@@ -43,9 +43,6 @@
     
 
 }
-
-
-
 /*  
 input[type=text] {
     width: 100%;

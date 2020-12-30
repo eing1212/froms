@@ -69,26 +69,53 @@
                         <h5 class="helpp_text">(สำหรับนักศึกษาที่ได้ศึกษามาเเล้วไม่น้อยกว่าหนึ่งภาคการศึกษา)<span
                                 class="badge bg-secondary"></span></h5>
 
-            <!--วันที่ยื่นคำร้อง-->
-                <div class="d-flex justify-content-between">
-                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-                    <div>--วันที่ยื่นคำร้อง--</div>
-                    <input type='text' id='tbDate' placeholder='กรุณาเลือกวันที่' />
 
                     </div>
-                </div>
 
                 </div>
-                
+
             </div>
 
-            <br /> 
 
 
             <form class="row g-3 needs-validation container" novalidate>
+
+                <!--วันที่ยื่นคำร้อง-->
+
+
+                <div class="d-flex justify-content-between">
+                    <div class="col-md-5"></div>
+                    <div class="col-md-5"></div>
+
+                    <div class="col-md-2 p-0">
+                        <label for="validationCustom01" class="form-label">เขียนเมื่อวันที่</label>
+                        <input type="text" class="form-control" id='tbDate' placeholder='กรุณาเลือกวันที่' required>
+                        <div class="invalid-feedback">
+                            กรุณาเลือกวันที่.
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- คำนำหน้า -->
+                <div class="col-md-2">
+                    <label for="validationCustom01" class="form-label">คำนำหน้า</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">เลือก</option>
+                        <option>นาย</option>
+                        <option>นางสาว</option>
+
+                    </select>
+                    <div class="valid-feedback">
+                        กรอกเรียบร้อย!
+                    </div>
+                    <div class="invalid-feedback">
+                        กรุณากรอกชื่อ.
+                    </div>
+                </div>
                 <!-- ชื่อ -->
 
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <label for="validationCustom01" class="form-label">ชื่อ</label>
                     <input type="text" class="form-control" id="validationCustom01" value="" required>
                     <div class="valid-feedback">
@@ -99,7 +126,7 @@
                     </div>
                 </div>
                 <!-- นามสกุล -->
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <label for="validationCustom02" class="form-label">นามสกุล</label>
                     <input type="text" class="form-control" id="validationCustom02" value="" required>
                     <div class="valid-feedback">
@@ -110,13 +137,13 @@
                     </div>
                 </div>
 
-                
+
                 <!-- อีเมล -->
                 <div class="col-md-3">
                     <label for="validationCustomUsername" class="form-label">อีเมล</label>
                     <div class="input-group has-validation">
-                        <input type="text" class="form-control" placeholder=""
-                            aria-label="" aria-describedby="basic-addon2" required>
+                        <input type="text" class="form-control" placeholder="" aria-label=""
+                            aria-describedby="basic-addon2" required>
                         <span class="input-group-text" id="basic-addon2">@mju.ac.th</span>
 
                         <div class="valid-feedback">
@@ -178,17 +205,17 @@
                         กรุณาเลือก
                     </div>
                 </div>
-                
-               
-               
+
+
+
                 <div class="col-md-3">
                     <label for="validationCustom06" class="form-label">รหัสนักศึกษา</label>
                     <input type="text" class="form-control" id="validationCustom05" required>
                     <div class="invalid-feedback">
                         กรุณากรอกรหัสนักศึกษา
                     </div>
-                </div> 
-                
+                </div>
+
                 <div class="col-md-3">
                     <label for="validationCustom04" class="form-label">หลักสูตร ปริญญาตรี</label>
                     <select class="form-select" id="validationCustom06" required>
@@ -203,10 +230,10 @@
                     </div>
                 </div>
 
-                
-                
+
+
                 <!--ขอลาพักภาคเรียนที่...เเถว3-->
-                <div class="col-md-3">
+                <!-- <div class="col-md-3">
                     <label for="validationCustom04" class="form-label">ขอลาพักการศึกษาในภาคเรียนที่</label>
                     <select class="form-select" id="validationCustom07" required>
                         <option selected disabled value="">เลือก</option>
@@ -218,9 +245,9 @@
                         กรุณาเลือก
                     </div>
                 </div>
+ -->
 
-
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <label for="validationCustom04" class="form-label">คณะ</label>
                     <select class="form-select" id="validationCustom08" required>
                         <option selected disabled value="">เลือก</option>
@@ -238,10 +265,10 @@
                         กรุณาเลือก
                     </div>
                 </div>
-                
-               
 
-                <div class="col-md-3">
+
+
+                <div class="col-md-4">
                     <label for="validationCustom04" class="form-label">สาขา</label>
                     <select class="form-select" id="validationCustom09" required>
                         <option selected disabled value="">เลือก</option>
@@ -257,9 +284,9 @@
                         กรุณาเลือก
                     </div>
                 </div>
-                
-                <div class="col-md-3">
-                    <label for="validationCustom04" class="form-label">เรียน คณบดีคณะ</label>
+
+                <div class="col-md-4">
+                    <label for="validationCustom04" class="form-label">เรียน คณบดี คณะ</label>
                     <select class="form-select" id="validationCustom08" required>
                         <option selected disabled value="">เลือก</option>
                         <option>วิทยาศาสตร์</option>
@@ -279,31 +306,506 @@
 
 
 
-               
-               
-                
-                <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
-                            Agree to terms and conditions
-                        </label>
-                        <div class="invalid-feedback">
-                            You must agree before submitting.
-                        </div>
+                <!-- comment -->
+                <div class="col-md-12">
+                    <label for="validationCustom06" class="form-label">มีความประสงค์จะขอลาพักการศึกษา เนื่องจาก</label>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 100px" required></textarea>
+                        <label for="floatingTextarea2"></label>
+                    </div>
+                    <div class="invalid-feedback">
+                        กรุณากรอก
                     </div>
                 </div>
 
-                <div class="col-12">
-                    <button class="btn btn-primary" type="submit">Submit form</button>
+
+                <!-- เเนบไฟล์ -->
+                <div class="col-md-12">
+                    <label for="validationCustom06"
+                        class="form-label">กรุณาเเนบใบยินยอมของผู้ปกครอง/ใบรับรองเเพทย์/เอกสารอื่นๆ</label>
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="inputGroupFile02" required>
+                        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                    </div>
+                    <div class="invalid-feedback">
+                        กรุณาเเนบเอกสารยืนยัน
+                    </div>
                 </div>
-            </form>
+
+               
+               
+               <!-- เเนบไฟล์ยินยอม -->
+                <div class="row g-3 p-5">
+                        <h3>ขั้นตอนการเสนอคำร้องขอลาพักการศึกษา</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="clearfix my-3">
+                                    <!-- <div class="spinner-border mx-3 float-start text-warning" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div> -->
+                                    <p>(1) นักศึกษากรอกคำร้องขอลาพักการศึกษา</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="clearfix my-3">
+                                    <!-- <div class="spinner-border mx-3 float-start text-warning" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div> -->
+                                    <p>(2) เสนอคำร้องต่อหัวหน้ากลุ่มภารทะเบียน ประมวลผลฯ</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="two" value="" required>
+                                    <label class="form-check-label" for="two">ทราบ</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="semone"
+                                        value="option1">
+                                    <label class="form-check-label" for="semone">ภาคเรียนที่ 1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="semtwo"
+                                        value="option2">
+                                    <label class="form-check-label" for="semtwo">ภาคเรียนที่ 2</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input mb-3 text-center">
+                                    <input type="file" class="form-control" id="steptwo" placeholder="รูปภาพลายเซ็นต์"
+                                        required>
+                                    <label for="signone" class="form-label">รูปภาพลายเซ็นต์</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input-group mb-3" style="width: auto">
+                                    <span class="input-group-text input-group-sm" id="date">วันที่</span>
+                                    <input type="date" class="form-control" placeholder="วันที่" aria-label="Date"
+                                        aria-describedby="date" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="clearfix my-3">
+                                    <!-- <div class="spinner-border mx-3 float-start text-warning" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div> -->
+                                    <p>(3) เสนอคำร้องต่อผู้อำนวยการสำนักบริหารและพัฒนาวิชาการ</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="three" value="" required>
+                                    <label class="form-check-label" for="three">ทราบ</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input mb-3 text-center">
+                                    <input type="file" class="form-control" id="stepthree" placeholder="รูปภาพลายเซ็นต์"
+                                        required>
+                                    <label for="signthree" class="form-label">รูปภาพลายเซ็นต์</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input-group mb-3" style="width: auto">
+                                    <span class="input-group-text input-group-sm" id="date">วันที่</span>
+                                    <input type="date" class="form-control" placeholder="วันที่" aria-label="Date"
+                                        aria-describedby="datethree" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="clearfix my-3">
+                                    <!-- <div class="spinner-border mx-3 float-start text-warning" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div> -->
+                                    <p>(4) เสนอคำร้องต่ออาจารย์ที่ปรึกษา</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="four" value="" required>
+                                    <label class="form-check-label" for="four">ทราบ</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input mb-3 text-center">
+                                    <input type="file" class="form-control" id="stepfour" placeholder="รูปภาพลายเซ็นต์"
+                                        required>
+                                    <label for="signfour" class="form-label">รูปภาพลายเซ็นต์</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input-group mb-3" style="width: auto">
+                                    <span class="input-group-text input-group-sm" id="date">วันที่</span>
+                                    <input type="date" class="form-control" placeholder="วันที่" aria-label="Date"
+                                        aria-describedby="datefour" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="clearfix my-3">
+                                    <!-- <div class="spinner-border mx-3 float-start text-warning" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div> -->
+                                    <p>(5) เสนอคำร้องต่อประธานคณะกรรมการประจำหลักสูตร</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkfive" value="" required>
+                                    <label class="form-check-label" for="inlineCheckbox1">ทราบ</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input mb-3 text-center">
+                                    <input type="file" class="form-control" id="stepfive" placeholder="รูปภาพลายเซ็นต์"
+                                        required>
+                                    <label for="signfive" class="form-label">รูปภาพลายเซ็นต์</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input-group mb-3" style="width: auto">
+                                    <span class="input-group-text input-group-sm" id="date">วันที่</span>
+                                    <input type="date" class="form-control" placeholder="วันที่" aria-label="Date"
+                                        aria-describedby="datefive" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="clearfix my-3">
+                                    <!-- <div class="spinner-border mx-3 float-start text-warning" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div> -->
+                                    <p>(6) เสนอคำร้องต่อคณบดี เพื่ออนุมัติ</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="accept"
+                                        value="" required>
+                                    <label class="form-check-label" for="accept">อนุมัติ</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="reject"
+                                        value="" required>
+                                    <label class="form-check-label" for="reject">ไม่อนุมัติ</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input mb-3 text-center">
+                                    <input type="file" class="form-control" id="stepsix" placeholder="รูปภาพลายเซ็นต์"
+                                        required>
+                                    <label for="signsix" class="form-label">รูปภาพลายเซ็นต์</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input-group mb-3" style="width: auto">
+                                    <span class="input-group-text input-group-sm" id="date">วันที่</span>
+                                    <input type="date" class="form-control" placeholder="วันที่" aria-label="Date"
+                                        aria-describedby="datexix" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="clearfix my-3">
+                                    <!-- <div class="spinner-border mx-3 float-start text-warning" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div> -->
+                                    <p>(7) นำคำร้องไปชำระเงิน</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="seven" value="" required>
+                                    <label class="form-check-label" for="seven">ทราบ</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="semone"
+                                        value="" required>
+                                    <label class="form-check-label" for="semone">1,200บาท</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="semtwo"
+                                        value="" required>
+                                    <label class="form-check-label" for="semtwo">1,000บาท</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input mb-3 text-center">
+                                    <input type="file" class="form-control" id="stepseven" placeholder="รูปภาพลายเซ็นต์"
+                                        required>
+                                    <label for="signseven" class="form-label">รูปภาพลายเซ็นต์</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input-group mb-3" style="width: auto">
+                                    <span class="input-group-text input-group-sm" id="date">วันที่</span>
+                                    <input type="date" class="form-control" placeholder="วันที่" aria-label="Date"
+                                        aria-describedby="dateseven" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="clearfix my-3">
+                                    <!-- <div class="spinner-border mx-3 float-start text-warning" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div> -->
+                                    <p>(8) นำคำร้องขอลาพีกการศึกษาที่ชำระเงินแล้ว ยื่นต่อกลุ่มภารกิจทะเบียนเรียนฯ
+                                        เพื่อบันทึกฐานข้อมูลนักศึกษา
+                                        และให้นักศึกษาเก็บหลักฐานใบเสร็จที่ชำระเงินไว้เพือนตรวจสอบการบันทึกการลาพักการศึกษา
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="clearfix my-3">
+                                    <!-- <div class="spinner-border mx-3 float-start text-warning" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div> -->
+                                    <p>(9) เจ้าหน้าที่ทะเบียนฯ บันทึกลงฐานข้อมูล นักศึกษาสามารถตรวจสอบได้ในวันถัดไป</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checknine" value="" required>
+                                    <label class="form-check-label" for="inlineCheckbox1">ทราบ</label>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input mb-3 text-center">
+                                    <input type="file" class="form-control" id="stepnine" placeholder="รูปภาพลายเซ็นต์"
+                                        required>
+                                    <label for="signnine" class="form-label">รูปภาพลายเซ็นต์</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input-group mb-3" style="width: auto">
+                                    <span class="input-group-text input-group-sm" id="date">วันที่</span>
+                                    <input type="date" class="form-control" placeholder="วันที่" aria-label="Date"
+                                        aria-describedby="datenine" required>
+                                </div>
+                            </div>
+                        </div>
+
+                
+              
+                <!-- คำรับรองผู้ปกครอง -->
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <h1 class="help_text">คำรับรองผู้ปกครอง<span class="badge bg-secondary"></span></h1>
+                            <h5 class="helpp_text"><span class="badge bg-secondary"></span></h5>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- คำนำหน้า -->
+                <div class="col-md-2">
+                    <label for="validationCustom01" class="form-label">คำนำหน้า</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">เลือก</option>
+                        <option>นาย</option>
+                        <option>นางสาว</option>
+
+                    </select>
+                    <div class="valid-feedback">
+                        กรอกเรียบร้อย!
+                    </div>
+                    <div class="invalid-feedback">
+                        กรุณากรอกชื่อ.
+                    </div>
+                </div>
+
+
+                <!-- ชื่อ -->
+
+                <div class="col-md-3">
+                    <label for="validationCustom01" class="form-label">ชื่อ</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                    <div class="valid-feedback">
+                        กรอกเรียบร้อย!
+                    </div>
+                    <div class="invalid-feedback">
+                        กรุณากรอกชื่อ.
+                    </div>
+                </div>
+                <!-- นามสกุล -->
+                <div class="col-md-3">
+                    <label for="validationCustom02" class="form-label">นามสกุล</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required>
+                    <div class="valid-feedback">
+                        กรอกเรียบร้อย!
+                    </div>
+                    <div class="invalid-feedback">
+                        กรุณากรอกนามสกุล.
+                    </div>
+                </div>
+
+                <!-- เบอร์โทรศัพท์ -->
+
+                <div class="col-md-4">
+                    <label for="validationCustom03" class="form-label">เบอร์โทรศัพท์</label>
+                    <input type="text" class="form-control" id="validationCustom03" value="" required>
+                    <div class="valid-feedback">
+                        กรอกเรียบร้อย!
+                    </div>
+                    <div class="invalid-feedback">
+                        กรุณากรอกเบอร์โทรศัพท์
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <label for="validationCustom03" class="form-label">บ้านเลขที่</label>
+                    <input type="text" class="form-control" id="validationCustom03" value="" required>
+                    <div class="valid-feedback">
+                        กรอกเรียบร้อย!
+                    </div>
+                    <div class="invalid-feedback">
+                        กรุณากรอกให้ครบ
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="validationCustom03" class="form-label">หมู่</label>
+                    <input type="text" class="form-control" id="validationCustom03" value="" required>
+                    <div class="valid-feedback">
+                        กรอกเรียบร้อย!
+                    </div>
+                    <div class="invalid-feedback">
+                        กรุณากรอกให้ครบ
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="validationCustom03" class="form-label">ตำบล</label>
+                    <input type="text" class="form-control" id="validationCustom03" value="" required>
+                    <div class="valid-feedback">
+                        กรอกเรียบร้อย!
+                    </div>
+                    <div class="invalid-feedback">
+                        กรุณากรอกให้ครบ
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="validationCustom03" class="form-label">อำเภอ</label>
+                    <input type="text" class="form-control" id="validationCustom03" value="" required>
+                    <div class="valid-feedback">
+                        กรอกเรียบร้อย!
+                    </div>
+                    <div class="invalid-feedback">
+                        กรุณากรอกให้ครบ
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="validationCustom03" class="form-label">จังหวัด</label>
+                    <input type="text" class="form-control" id="validationCustom03" value="" required>
+                    <div class="valid-feedback">
+                        กรอกเรียบร้อย!
+                    </div>
+                    <div class="invalid-feedback">
+                        กรุณากรอกให้ครบ
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <label for="validationCustom03" class="form-label">รหัสไปรษณีย์</label>
+                    <input type="text" class="form-control" id="validationCustom03" value="" required>
+                    <div class="valid-feedback">
+                        กรอกเรียบร้อย!
+                    </div>
+                    <div class="invalid-feedback">
+                        กรุณากรอกให้ครบ
+                    </div>
+                </div>
+<!-- เเนบไฟล์ -->
+                <div class="col-md-12">
+                    <label for="validationCustom06"
+                        class="form-label">กรุณาเเนบใบยินยอมของผู้ปกครอง/ใบรับรองเเพทย์/เอกสารอื่นๆ</label>
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="inputGroupFile02" required>
+                        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                    </div>
+                    <div class="invalid-feedback">
+                        กรุณาเเนบเอกสารยืนยัน
+                    </div>
+                </div>
+        </div>
 
 
 
+
+        <div class="container">
+
+            <div class="col-md-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        กรอกข้อมูลให้ครบถ้วนก่อนยืนยัน
+                    </label>
+                    <div class="invalid-feedback">
+                        ข้อมูลไม่ครบ
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12" style="padding-bottom: 2rem; ">
+                <button class="btn btn-primary" type="submit">ยืนยัน</button>
+            </div>
 
         </div>
         </form>
+
+
+
+
+    </div>
+    </form>
     </div>
 
 
@@ -313,10 +815,10 @@
     (function () {
 
         $(document).ready(function () {
-        $('input[id$=tbDate]').datepicker({
-            dateFormat: 'dd-mm-yy'			// Date Format "dd-mm-yy"
+            $('input[id$=tbDate]').datepicker({
+                dateFormat: 'dd-mm-yy'			// Date Format "dd-mm-yy"
+            });
         });
-    });
         'use strict'
 
         // Fetch all the forms we want to apply custom Bootstrap validation styles to
